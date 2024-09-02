@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Life Insurance Premium Calculator</title>
+</head>
+<body>
+    <!-- Login Form -->
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-container" class="box">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Calculator Form -->
+        <div id="calculator-container" class="box" style="display:none;">
+            <h2>Life Insurance Premium Calculator</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="gender" placeholder="Gender">
+            <input type="text" id="smokerStatus" placeholder="Smoker Status">
+            <input type="number" id="coverageAmount" placeholder="Coverage Amount">
+            <input type="number" id="policyTerm" placeholder="Policy Term (years)">
+            <button onclick="calculatePremium()">Calculate Premium</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="auht.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
